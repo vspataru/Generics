@@ -1,0 +1,28 @@
+1. Create a class Helper. Inside class: 
+Create a generic method that receives as input an array and returns it in reverse. Display at console the reverse array.
+	-> Input: [1, 2, 3, 4, 5], also ['a', 'b', 'c', 'd']
+	-> Output: [5, 4, 3, 2, 1], ['d', 'c', 'b', 'a']
+
+2. Create a class that has two generic parameters(one that have the constraint of being a reference type and the 
+constructor constraint and the other one to implement a generic interface created by you).Create a method inside the 
+class that displays the types of both parameters.
+
+3.Create a generic class Pair<S,T> which aggregates two values of the types S and T respectively. 
+Be sure to equip the class with an appropriate constructor, and appropriate getter properties.
+
+4.Create following methods inside class StudentRepository:
+	-Add -> Add a student
+	-GetById -> returns first student with received id
+	-GetAll -> returns all students
+	-Update(int id, Student newStudent) -> Update student info based on id and new student info
+	-Remove(int id) -> Remove student by id
+	-Remove(Student student) -> Remove received student
+Constraints:
+	-> Can't add a student with same id;
+	-> Can't update a student if doesn't exists;
+	-> Can't retrive a student if doesn't exists;
+	-> Can't add null student (also firstName and LastName can't be null);
+	-> Can't add more than 3 students (max limit 3);
+	-> Can't remove a student if doesn't exists.
+	
+INFO: Id should not be passed in constructor. Repository should generate unique ids;
